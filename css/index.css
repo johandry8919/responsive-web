@@ -4,12 +4,12 @@
   bottom: 15px;
   right: 15px;
 }
-#whatsapp img {
-  width: 75px;
-}
+#whatsapp img { width: 75px;}
+
 .container {
-  width: 70%;
+  max-width: 85%;
   margin: auto;
+  border: rgb(56, 56, 56) solid 1px;
 }
 .nav-menu {
   text-align: center;
@@ -38,8 +38,7 @@ nav ul li {
 nav ul li:hover {color: rgb(255, 102, 0);cursor: pointer;}
 .container header {
   padding: 10px;
-  margin-bottom: 15px;
-  margin-top: 5px;
+  margin: 20px;
 }
 .container header img {
   width: 100%;
