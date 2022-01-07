@@ -7,9 +7,9 @@
 #whatsapp img { width: 75px;}
 
 .container {
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.16), 0px 2px 10px rgba(0,0,0,0.12);
   max-width: 85%;
   margin: auto;
-  border: rgb(56, 56, 56) solid 1px;
 }
 .nav-menu {
   text-align: center;
