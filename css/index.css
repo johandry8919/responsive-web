@@ -4,44 +4,38 @@
   bottom: 15px;
   right: 15px;
 }
-#whatsapp img{
-  width: 100px;
+#whatsapp img {
+  width: 75px;
 }
-.container{
-    width: 70%;
-    margin: auto;
+.container {
+  width: 70%;
+  margin: auto;
 }
-.nav-menu{
+.nav-menu {
   text-align: center;
-}
-.btn{
-    font-size: 2em;
-    cursor: pointer;
-    position: absolute;
-    top: 5%;
-    left: 20%;
-    display: none;
-}
-nav ul {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: center;
  
+  
 }
+.btn {
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 4%;
+  display: none;
+  margin: 10px;
+}
+nav ul { display: flex;}
 
 nav ul li {
-  
-  margin-left: 25px;
+  margin: 14px;
   list-style: none;
   transition: 0.25s;
-  padding-top: 15px;
-
+  padding-top: 5px;
 }
-nav ul li:hover {
-  color: rgb(255, 102, 0);
-  cursor: pointer;
-}
-
+nav ul li:hover {color: rgb(255, 102, 0);cursor: pointer;}
 .container header {
   padding: 10px;
   margin-bottom: 15px;
@@ -56,7 +50,7 @@ nav ul li:hover {
   padding: 15px;
   font-size: 2em;
 }
-.intro p{
+.intro p {
   padding: 0 15px;
   line-height: 20px;
   font-size: 1.1em;
@@ -79,13 +73,13 @@ nav ul li:hover {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
-  transition: 0.20s;
+  transition: 0.2s;
   cursor: pointer;
 }
-.music-images img:hover{
-    -webkit-transform: scale(1.2);
--ms-transform: scale(1.2);
-transform: scale(1.2);
+.music-images img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .musica-nueva {
@@ -100,13 +94,19 @@ transform: scale(1.2);
   font-size: 1.1em;
   line-height: 20px;
 }
+.actual-img {
+  width: 400px;
+  padding: 15px;
+}
+.actual-img img {
+  width: 100%;
+}
 .actual {
   margin-top: 60px;
   border-top: 1px solid rgb(90, 90, 90);
   padding: 50px 60px;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
 }
 .actual .actual-text {
   width: 50%;
@@ -131,87 +131,83 @@ transform: scale(1.2);
 }
 
 .container footer {
-    text-align: center;
+  text-align: center;
   color: #ffffff;
   background: #080808;
   padding: 20px 0;
   border-radius: 10px;
- 
 }
-footer{
-    background-color: black;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    height: 15vh;
-    align-items: center;
-    justify-content: center;
+footer {
+  background-color: black;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  align-items: center;
+  justify-content: center;
 }
 footer div span {
+  color: #ffffff;
+  padding: 10px;
+}
+footer div {
+  margin-top: 10px;
+}
+footer div span i {
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
+.nav-menu.activado {
+  display: flex;
+  width: 100%;
+  animation: muestraLista 350ms ease-in-out both;
+}
+@keyframes muestraLista {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .nav-menu {
+    display: none;
+    width: 50%;
+    height: 45vh;
+    flex-direction: column;
+    background-color: #080808;
     color: #ffffff;
-    padding: 10px;
-    
-  
+    border-radius: 9px;
   }
-   footer div{
-      margin-top: 10px;
+  .nav-menu ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
   }
-  footer div span i {
-      color: white;
-      font-size: 2em;
-      cursor: pointer;
-    
-    
-  
+  .nav-menu ul li {
+    margin-top: 50px;
   }
-  .nav-menu.activado{
-    display: flex;
-    animation: muestraMenu 350ms ease-in-out both;
+  .btn {
+    display: block;
   }
-  @keyframes muestraLista {
-    from{opacity: 0;}
-    to{opacity: 1;}
-    
+  .actual {
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
   }
- 
- 
+  .actual-img {
+    width: 100%;
+    padding: 15px;
+  }
+  .actual-img img {
+    width: 100%;
+  }
 
-  @media  screen and (max-width:898px) {
-    body{
-      overflow: hidden;
-
-    }
-      .nav-menu{
-        display: none;
-       
-        width: 100%;
-        height: 86vh;
-        flex-direction: column;        
-       
-        
-          
-       
-          
-      }
-      .nav-menu ul{
-        flex-direction: column;
-        
-      }
-      .nav-menu ul li{
-        margin-top: 50px;
-      }
-      .btn{
-          display: block;
-      }
-      .actual{
-          flex-direction: column;
-          width: 100%;
-          box-sizing: border-box;
-          text-align: center;
-      }
-
-      .actual .actual-text{
-          width: 100%;
-      }
-      
+  .actual .actual-text {
+    width: 100%;
   }
+}
