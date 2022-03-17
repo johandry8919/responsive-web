@@ -1,3 +1,6 @@
+body{
+  background: lavenderblush;
+}
 #whatsapp {
   z-index: 9999;
   position: fixed;
